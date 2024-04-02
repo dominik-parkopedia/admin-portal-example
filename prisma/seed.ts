@@ -44,7 +44,7 @@ function generateRandomPaymentData() {
 }
 
 async function main() {
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 100; i++) {
     const payment = await prisma.payment.create({
       data: generateRandomPaymentData(),
     });
